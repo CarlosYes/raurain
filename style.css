@@ -7021,3 +7021,34 @@ width: 100%;
     transform: rotate(var(--angle)) translateX(calc(100vh + 5vmin));
   }
 }
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.photobanner {
+	position: fixed;
+	width: 280px;
+	height: 233px;
+	bottom: 2px;
+	display: flex;
+}
+
+.photobanner img {
+  margin: 0px 5px;
+  box-shadow: 2px 2px 5px #00FF00;
+}
+
+.photobanner {
+  -webkit-animation: bannermove 160s linear infinite;
+	animation: bannermove 160s linear infinite;
+}
+
+@keyframes bannermove {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -4650px;
+  }
+}
